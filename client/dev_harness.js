@@ -28,10 +28,10 @@ function arrify(a) {
     return isArray(a) ? a : a ? [a] : [];
 }
 
-_pjs_getScript('https://github.com/nrabinowitz/pjscrape/raw/master/client/jquery.js', function() {
+_pjs_getScript('https://rawgit.com/nrabinowitz/pjscrape/master/client/jquery.js', function() {
     window._pjs$ = jQuery.noConflict(true);
     // nesting ensures proper load order
-    _pjs_getScript('https://github.com/nrabinowitz/pjscrape/raw/master/client/pjscrape_client.js', function() {
+    _pjs_getScript('https://rawgit.com/nrabinowitz/pjscrape/master/client/pjscrape_client.js', function() {
     
         var suiteConfig = {};
         
